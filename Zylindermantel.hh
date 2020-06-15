@@ -10,7 +10,7 @@ public:
   Vektor punkt();
 
 private:
-  double r_,l_;
+  double r_, l_;
 };
 
 #endif

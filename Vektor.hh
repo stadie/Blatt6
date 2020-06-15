@@ -12,25 +12,25 @@ public:
 
   double betrag();
 
-  double x() { return x_;}
-  double y() { return y_;}
-  double z() { return z_;}
+  double x() { return x_; }
+  double y() { return y_; }
+  double z() { return z_; }
 
+  friend std::istream &operator>>(std::istream &is, Vektor &v);
+  friend std::ostream &operator<<(std::ostream &os, Vektor v);
 
-  friend std::istream& operator>>(std::istream& is, Vektor& v);
-  friend std::ostream& operator<<(std::ostream& os, Vektor v);
-  
   Vektor operator+(Vektor v);
   Vektor operator-(Vektor v);
-  
+
   double mal(Vektor v);
   Vektor kreuz(Vektor v);
 
-
-  bool operator==(Vektor v) { return ((x_== v.x_) &&  (y_== v.y_) &&  (z_== v.z_));}
+  bool operator==(Vektor v) {
+    return ((x_ == v.x_) && (y_ == v.y_) && (z_ == v.z_));
+  }
 
 private:
-  double x_,y_,z_;
+  double x_, y_, z_;
 };
 
 #endif

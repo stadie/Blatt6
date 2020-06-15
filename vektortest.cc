@@ -1,5 +1,5 @@
-#include <iostream>
 #include "Vektor.hh"
+#include <iostream>
 
 int main() {
   Vektor a(2, -1, 2);
